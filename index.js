@@ -32,7 +32,7 @@ const server = app.listen(process.env.PORT || 9000, () => {
 
 const io = socket(server, {
   cors: {
-    origin: "https://mern-stack-livechatapp.herokuapp.com",
+    origin: "*",
     credentials: true,
   },
 });
